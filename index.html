@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Слабое звено</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="script/script.js"></script>
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">СЛАБОЕ ЗВЕНО</div>
+        
+        <div class="main-content">
+            <div class="left-panel">
+                <div class="label">таймер</div>
+                <input type="text" id="timer" class="timer-input" value="2:00" placeholder="мм:сс">
+                
+                <div class="timer-display" id="timer-display">2:00</div>
+                
+                <div class="bank-display">
+                    банк: <span id="bank">0</span>
+                </div>
+                
+                <div class="score-display">
+                    счет: <span id="score">0</span>
+                </div>
+                
+                <div class="controls">
+                    <div class="control-row">
+                        <button id="start-btn" class="start-btn">Начать игру</button>
+                        <button id="pause-btn" class="pause-btn disabled" disabled>Пауза</button>
+                    </div>
+                    <div class="control-row">
+                        <button id="correct-btn" class="correct-btn disabled" disabled>Верно</button>
+                        <button id="wrong-btn" class="wrong-btn disabled" disabled>Не верно</button>
+                    </div>
+                    <div class="control-row">
+                        <button id="bank-btn" class="bank-btn disabled" disabled>Банк</button>
+                        <button id="reset-timer-btn" class="reset-timer-btn">сбросить таймер</button>
+                    </div>
+                    <div class="control-row">
+                        <button id="reset-bank-btn" class="reset-bank-btn">сбросить банк</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="right-panel">
+                <div class="score-item" data-value="1000">1000</div>
+                <div class="score-item" data-value="700">700</div>
+                <div class="score-item" data-value="500">500</div>
+                <div class="score-item" data-value="300">300</div>
+                <div class="score-item" data-value="150">150</div>
+                <div class="score-item" data-value="100">100</div>
+                <div class="score-item" data-value="50">50</div>
+                <div class="score-item" data-value="20">20</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

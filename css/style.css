@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 932px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.header {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 15px;
+}
+
+.left-panel {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.right-panel {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.score-item {
+    background-color: #D9D9D9;
+    margin-bottom: 8px;
+    padding: 12px 0;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: default;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.score-item.active {
+    background-color: #74FF79;
+}
+
+.timer-display {
+    font-size: 32px;
+    text-align: center;
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #D9D9D9;
+    border-radius: 8px;
+}
+
+.bank-display,
+.score-display {
+    background-color: #D9D9D9;
+    padding: 12px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.control-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+button {
+    padding: 15px 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    flex: 1;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start-btn {
+    background-color: #283AFF;
+    color: white;
+}
+
+.pause-btn,
+.continue-btn {
+    background-color: #FFE063;
+}
+
+.correct-btn {
+    background-color: #74FF79;
+}
+
+.wrong-btn {
+    background-color: #FF9696;
+}
+
+.bank-btn {
+    background-color: #D9D9D9;
+}
+
+.reset-bank-btn,
+.reset-timer-btn {
+    background-color: #283AFF;
+    color: white;
+    font-size: 16px;
+}
+
+.timer-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+    border: 2px solid #D9D9D9;
+    border-radius: 8px;
+}
+
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.label {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 5px;
+    text-align: center;
+}
